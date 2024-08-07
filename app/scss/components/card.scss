@@ -1,13 +1,22 @@
 @use "../util/" as *;
 
 .card {
-  width: 327px;
+  min-width: 325px;
+  display: grid;
+
+  @include breakpoint(medium) {
+    width: 640px;
+  }
 
   @include breakpoint(large) {
+    grid-auto-flow: column;
     width: 912px;
   }
 
   .column {
+    @include breakpoint(large) {
+      width: 304px;
+    }
     &__sedans {
       background-color: var(--bright-orange);
     }
