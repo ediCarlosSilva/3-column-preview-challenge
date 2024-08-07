@@ -1,0 +1,80 @@
+@use "../util/" as *;
+
+.card {
+  width: 327px;
+
+  @include breakpoint(large) {
+    width: 912px;
+  }
+
+  .column {
+    &__sedans {
+      background-color: var(--bright-orange);
+    }
+
+    &__suvs {
+      background-color: var(--dark-cyan);
+    }
+
+    &__luxury {
+      background-color: var(--very-dark-cyan);
+    }
+
+    &__icon {
+      margin-bottom: rem(40);
+    }
+
+    &__title {
+      color: var(--white);
+      font-family: var(--font-big-shoulders);
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: rem(35);
+      letter-spacing: 0.5px;
+      margin-bottom: 40px;
+    }
+
+    &__detail {
+      color: var(--transparent-white);
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+
+    &__button {
+      border: 2px solid var(--very-light-gray);
+      background: var(--very-light-gray);
+      display: inline-block;
+      padding: 16px 32px;
+      border-radius: 30px;
+
+      &--sedan {
+        color: var(--bright-orange);
+      }
+
+      &--sedan:hover {
+        background: var(--bright-orange);
+        color: var(--very-light-gray);
+      }
+
+      &--suv {
+        color: var(--dark-cyan);
+      }
+
+      &--suv:hover {
+        background-color: var(--dark-cyan);
+        color: var(--very-light-gray);
+      }
+
+      &--luxury {
+        color: var(--very-dark-cyan);
+      }
+
+      &--luxury:hover {
+        background: var(--very-dark-cyan);
+        color: var(--very-light-gray);
+      }
+    }
+  }
+}

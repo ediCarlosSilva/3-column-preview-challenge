@@ -1,11 +1,17 @@
 @use "../util/" as *;
 
 body {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .container {
+  padding: 47px;
 }

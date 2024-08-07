@@ -8,21 +8,42 @@
   
   <title>Frontend Mentor | 3-column preview card component</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./dist/style.css">
+
+  <script defer src="./dist/script.js"></script>
+
 </head>
 <body>
-  
-  Sedans
-  Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
-  or on your next road trip.
+  <main class="card">
+    <article class="column column__sedans container">
+      <img src="./images/icon-sedans.svg" alt="Icon of a sedan car" class="column__icon">
+      <h2 class="column__title">Sedans</h2>
+      <p class="column__detail">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+        or on your next road trip.</p>
+      <a href="#" target="_blank" class="column__button column__button--sedan">Learn More</a>
+    </article>
 
-  SUVs
-  Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
-  and off-road adventures.
+    <article class="column column__suvs container">
+      <img src="./images/icon-suvs.svg" alt="Icon of a SUV car" class="column__icon">
+      <h2 class="column__title">SUVs</h2>
+      <p class="column__detail">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+        and off-road adventures.</p>
+      <a href="#" target="_blank" class="column__button column__button--suv">Learn More</a>
+    </article>
 
-  Luxury
-  Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
-  rental and arrive in style.
-  
+    <article class="column column__luxury container">
+      <img src="./images/icon-luxury.svg" alt="Icon of a Luxury car" class="column__icon">
+      <h2 class="column__title">Luxury</h2>
+      <p class="column__detail">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+        rental and arrive in style.</p>
+      <a href="#" target="_blank" class="column__button column__button--luxury">Learn More</a>
+    </article>
+  </main>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://edicarlossilva.github.io">Edi Carlos</a>.

@@ -9,6 +9,20 @@ The designs were created to the following widths:
 
 > 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
 
+## BEM - Block, Element, modifier
+
+```
+- card
+- column
+- column__icon
+- column__sedans
+- column__suvs
+- column__luxury
+- column__title
+- column__detail
+- column__button
+```
+
 ## Colors
 
 ### Primary
